@@ -562,6 +562,7 @@ color:white;
     text-align: center;
     padding:5px 15px;
     transition:all linear 0.5s ;
+    margin-bottom:10px;
 }
 
 .box:hover img{
