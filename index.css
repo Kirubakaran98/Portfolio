@@ -548,12 +548,11 @@ gap:20px;
     transition: height 0.5s;
 }
 .overlay h3{
-font-weight: 500;
-margin-top:40%;
+font-weight:700;
 margin-bottom:8px;
 font-size:30px;
 letter-spacing:2px;
-color: white;
+color:white;
 }
 .overlay a{
     font-weight: 600;

@@ -276,12 +276,7 @@ font-size:14px;
 .project .container {
     min-height: 93vh;
 }
-.box:hover .overlay {
-    height: 50vh;
-}
-.overlay h3{
-    margin-top:70%;
-}
+
 }
 
 @media screen and (max-width:400px){
@@ -351,9 +346,6 @@ font-size:14px;
 .education-list > :nth-child(3) {
     font-size: 14px;
     line-height:21px;
-}
-.box:hover .overlay {
-    height: 35vh;
 }
 .overlay h3 {
     font-size: 26px;
