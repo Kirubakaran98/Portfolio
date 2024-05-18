@@ -255,7 +255,9 @@ td .fa-angles-down{
 .contact-list {
     gap:10px;
 }
+
 .contact-box{
+    min-height:95vh;
     margin-bottom:15%;
 }
 .contact-item-list p{

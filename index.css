@@ -581,7 +581,7 @@ color:white;
 text-align: center;
 }
 .contact-box{
-    max-height:85vh;
+    height:95vh;
     display:flex;
     justify-content: flex-start;
     align-items: center;
