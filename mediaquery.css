@@ -184,7 +184,9 @@
 
  .contact-box{
     flex-direction: column;
-    height:80vh;
+    min-height:100vh;
+    margin-bottom:4%;
+
  }
  .remove{
     display:none;
@@ -254,10 +256,6 @@ td .fa-angles-down{
 }
 .contact-list {
     gap:10px;
-}
-
-.contact-box{
-    min-height:100vh;
 }
 .contact-item-list p{
   font-size:16px;
