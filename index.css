@@ -45,7 +45,6 @@ td .fa-angles-down{
     justify-content: space-around;
     height:15vh;
     font-size:22px;
-    /* line-height:50px; */
 }
 .nav-menu{
 display: flex;
@@ -91,12 +90,16 @@ margin-bottom:5px;
     transition: all 0.5s ease-in;
     color:var(--gray);
 }
-.profile-image{
+.animate-fadeIn{
+    opacity:0;
     transform:translateX(-100vw);
-    animation: fadeImage 2s ease forwards;
+}
+.animate-show-fadeIn, .animate-show-left-fadeIn{
+    animation: fadeImage 3s ease forwards;
 }
 @keyframes fadeImage {
-    to{
+    to{  
+        opacity:1;
         transform:translateX(0);
     }
 }
@@ -116,12 +119,14 @@ margin-bottom:5px;
     font-size:16px;
     font-weight:600;
 }
-.profile-content .intro, .name{
+.animate-fadeDown{
     opacity:0;
     transform: translateY(-3rem);
-    animation: fadeIn 3s ease forwards ;
 }
-@keyframes fadeIn {
+.animate-show-fadeDown{
+    animation: fadeDown 3s ease forwards ;
+}
+@keyframes fadeDown {
     to{
         transform: translateY(0);
         opacity:1;
@@ -171,10 +176,18 @@ margin-bottom:5px;
         background: transparent;
     }
 }
-.profile-button-container{
-    opacity: 1;
+.animate-fadeUp{
+    opacity:0;
     transform: translateY(3rem);
-    animation:fadeIn 3s ease forwards;
+}
+.animate-show-fadeUp{
+    animation:fadeUp 3s ease forwards;
+}
+@keyframes fadeUp {
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
 }
 .profile-button-container button{
     width:42%;
@@ -189,7 +202,7 @@ margin-bottom:5px;
 .profile-button-container .cv:hover{
     transition: all 0.8s ease;
     background-color:var(--violet) ;
-    color: white;
+    color:white;
 }
 .profile-button-container .contact{
     color:white;
@@ -206,8 +219,6 @@ margin-bottom:5px;
 .fa-brands{
     font-size:50px;
     cursor: pointer;
-    transform: translateY(4rem);
-    animation: fadeIn 3s ease forwards;
 }
 /* about */
 .about-container{
@@ -222,10 +233,7 @@ padding:0px 4.5%;
     color:var(--violet);
 }
 .about-image img{
-    transform:translateX(-100vw);
-    width:37vw;
-    animation:fadeImage 3s ease forwards;
-    
+    width:37vw;   
 }
 .about-me .about-title{
     font-size:50px;
@@ -234,8 +242,10 @@ padding:0px 4.5%;
 .about-desc,.about-desc-text{
     max-width:95%;
     margin-bottom:15px;
+}
+.animate-left-fadeIn{
+    opacity:0;
     transform: translateX(100vw);
-    animation: fadeImage 3s ease forwards;
 }
 .about-me > :nth-child(2){
     font-size:20px;
@@ -253,9 +263,6 @@ padding:0px 4.5%;
 .personal-table{
     display: flex;
     gap:10px;
-    opacity:0;
-    transform: translateY(-3rem);
-    animation: fadeIn 3s ease forwards ;
 }
 .personal-info > :nth-child(1){
     margin-bottom:15px;
@@ -284,10 +291,12 @@ padding:0px 4.5%;
     color: var(--gray);
  
 }
-.education-list-items{
+.animate-scale{
    opacity:0;
    transform:scale(0.6);
-   animation:zoomIn 3s ease forwards;
+}
+.animate-show-scale{
+    animation:zoomIn 3s ease forwards;
 }
 @keyframes zoomIn{
    to{
@@ -396,8 +405,6 @@ margin-left:15px;
     position: relative;
     margin: auto;
     /* left:50%; */
-    transform: translateX(100%);
-    animation:fadeIn 3s ease forwards;
 
 }
 .certificate .certificate-item >:nth-child(2){
@@ -420,8 +427,6 @@ margin-left:15px;
 .skill-list{
     width:100%;
     text-align: center;
-    transform: scale(0.6);
-    animation:zoomIn 3s ease forwards;
 }
 .skill-items{
     display: grid;
@@ -522,12 +527,6 @@ gap:20px;
     position: relative;
     overflow: hidden;
     box-shadow:5px 5px 15px rgba(0, 0, 0, 0.562); 
-    transform: translateX(-100%);
-    animation: fadeIn 3s ease forwards;
-}
-.box1{
-    transform: translateX(100%);
-    animation: fadeIn 3s ease forwards;
 }
 .overlay{
     height:0;
@@ -587,17 +586,11 @@ text-align: center;
     align-items: center;
     gap:50px;
 }
-.contact-box img{
-    transform:translateX(-100%);
-    animation:fadeIn 3s ease forwards;
-}
 .contact-list{
     position: relative;
     display: flex;
     align-items: center;
     gap:20px;
-    transform: translateX(100%);
-    animation: fadeIn 3s ease forwards;
 }
 .contact-list p{
     font-weight: 700;
@@ -641,6 +634,4 @@ text-align: center;
     text-align: center;
     padding:10px 0px;
     color: var(--gray);
-    transform:translateY(-30%);
-    animation: fadeIn 3s ease forwards;
 }
