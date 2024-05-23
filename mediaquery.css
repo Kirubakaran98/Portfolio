@@ -349,6 +349,9 @@ font-size:14px;
 .overlay h3 {
     font-size: 26px;
 }
+.whatsapp{
+    display:none;
+}
 }
 @media  screen and (max-width:350px) {
     .education-list-container .education-list::before {
