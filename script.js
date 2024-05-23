@@ -123,12 +123,10 @@ const triggerAnimate=window.innerHeight;
   const boxes=box.getBoundingClientRect().top; 
 
   if(boxes < triggerAnimate -150){
-    console.log((boxes < triggerAnimate -150));
     box.classList.add("animate-show-scale");
 
   }
   else{
-    console.log("false"+(boxes < triggerAnimate -150));
     box.classList.add("animate-show-scale");
   }
  })
